@@ -13,6 +13,7 @@
 		E648D3D9237066FA0048E543 /* CGTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E648D3D7237066FA0048E543 /* CGTest.xcdatamodeld */; };
 		E648D3DB237066FC0048E543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E648D3DA237066FC0048E543 /* Assets.xcassets */; };
 		E648D3DE237066FC0048E543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E648D3DC237066FC0048E543 /* LaunchScreen.storyboard */; };
+		E648D3E6237067560048E543 /* CGTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648D3E5237067560048E543 /* CGTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E648D3DA237066FC0048E543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E648D3DD237066FC0048E543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E648D3DF237066FC0048E543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E648D3E5237067560048E543 /* CGTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E648D3D0237066FA0048E543 /* AppDelegate.swift */,
 				E648D3D2237066FA0048E543 /* ViewController.swift */,
+				E648D3E5237067560048E543 /* CGTestView.swift */,
 				E648D3D4237066FA0048E543 /* Main.storyboard */,
 				E648D3DA237066FC0048E543 /* Assets.xcassets */,
 				E648D3DC237066FC0048E543 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E648D3E6237067560048E543 /* CGTestView.swift in Sources */,
 				E648D3D3237066FA0048E543 /* ViewController.swift in Sources */,
 				E648D3D9237066FA0048E543 /* CGTest.xcdatamodeld in Sources */,
 				E648D3D1237066FA0048E543 /* AppDelegate.swift in Sources */,
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6B8GN5459;
 				INFOPLIST_FILE = CGTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6B8GN5459;
 				INFOPLIST_FILE = CGTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
