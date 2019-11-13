@@ -9,13 +9,14 @@
 import UIKit
 
 class CGTestView: UIView {
+    var path = UIBezierPath()
     
     var angle: Int = 0
     
     var radius: CGFloat = 0 {
         willSet {
             drawCircle(radius: newValue)
-            drawArm(length: newValue, angle: angle)
+            drawArm(length: newValue - 10, angle: angle)
         }
     }
     
@@ -30,12 +31,14 @@ class CGTestView: UIView {
     
     func drawCircle(radius: CGFloat) {
         let circleLayer = CAShapeLayer()
-        let path = UIBezierPath(arcCenter: self.center, radius: radius, startAngle: 0, endAngle: CGFloat.pi*2, clockwise: true)
+//        let center = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
+        path = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: CGFloat.pi*2, clockwise: true)
         circleLayer.path = path.cgPath
-        circleLayer.lineWidth = 10
+        circleLayer.lineWidth = 20
         circleLayer.strokeColor = UIColor.red.cgColor
         circleLayer.fillColor = UIColor.clear.cgColor
         self.layer.addSublayer(circleLayer)
+        drawGradient(mask: circleLayer)
     }
     
     func drawArm(length: CGFloat, angle: Int) {
@@ -49,6 +52,7 @@ class CGTestView: UIView {
         lineLayer.path = linePath
         lineLayer.lineWidth = 3
         lineLayer.strokeColor = UIColor.blue.cgColor
+        lineLayer.bounds = self.bounds
         layer.addSublayer(lineLayer)
         
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -59,11 +63,22 @@ class CGTestView: UIView {
         animation.duration = 2
         animation.fillMode = CAMediaTimingFillMode.forwards
         animation.isRemovedOnCompletion = false
-        layer.add(animation, forKey: "ratate")
+        lineLayer.add(animation, forKey: "ratate")
     }
     
     func degreeToRadian(degree: Int) -> CGFloat {
         return CGFloat(degree) * CGFloat.pi / 180
+    }
+    
+    func drawGradient(mask: CAShapeLayer) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.type = .axial
+        gradientLayer.colors = [UIColor.green, .yellow, .red, .purple].map{$0.cgColor}
+        gradientLayer.bounds = path.bounds
+        
+        gradientLayer.mask = mask
+        layer.addSublayer(gradientLayer)
+
     }
     
 }

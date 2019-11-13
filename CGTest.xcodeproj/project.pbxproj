@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63629362379C7AF00F8DA73 /* GradientArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63629352379C7AF00F8DA73 /* GradientArcView.swift */; };
+		E6362938237A071E00F8DA73 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6362937237A071E00F8DA73 /* CircleView.swift */; };
 		E648D3D1237066FA0048E543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648D3D0237066FA0048E543 /* AppDelegate.swift */; };
 		E648D3D3237066FA0048E543 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648D3D2237066FA0048E543 /* ViewController.swift */; };
 		E648D3D6237066FA0048E543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E648D3D4237066FA0048E543 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E63629352379C7AF00F8DA73 /* GradientArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientArcView.swift; sourceTree = "<group>"; };
+		E6362937237A071E00F8DA73 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E648D3CD237066FA0048E543 /* CGTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E648D3D0237066FA0048E543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E648D3D2237066FA0048E543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +64,9 @@
 			children = (
 				E648D3D0237066FA0048E543 /* AppDelegate.swift */,
 				E648D3D2237066FA0048E543 /* ViewController.swift */,
+				E63629352379C7AF00F8DA73 /* GradientArcView.swift */,
 				E648D3E5237067560048E543 /* CGTestView.swift */,
+				E6362937237A071E00F8DA73 /* CircleView.swift */,
 				E648D3D4237066FA0048E543 /* Main.storyboard */,
 				E648D3DA237066FC0048E543 /* Assets.xcassets */,
 				E648D3DC237066FC0048E543 /* LaunchScreen.storyboard */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6362938237A071E00F8DA73 /* CircleView.swift in Sources */,
 				E648D3E6237067560048E543 /* CGTestView.swift in Sources */,
 				E648D3D3237066FA0048E543 /* ViewController.swift in Sources */,
+				E63629362379C7AF00F8DA73 /* GradientArcView.swift in Sources */,
 				E648D3D9237066FA0048E543 /* CGTest.xcdatamodeld in Sources */,
 				E648D3D1237066FA0048E543 /* AppDelegate.swift in Sources */,
 			);
@@ -293,7 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6B8GN5459;
 				INFOPLIST_FILE = CGTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6B8GN5459;
 				INFOPLIST_FILE = CGTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
